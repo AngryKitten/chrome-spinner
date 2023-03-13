@@ -7,8 +7,8 @@ const rand = (min, max, mod) => {
 const spin = (elem) => {
   elem.addEventListener('mouseover', () => {
     elem.style.color = 'firebrick';
-    elem.style.transition = elem.style.transition || all ${rand(5, 100, 1)}s ease-in-out;
-    elem.style.transform = elem.style.transform || rotate(${rand(-5, 11, 360)}deg);
+    elem.style.transition = elem.style.transition || `all ${rand(5, 100, 1)}s ease-in-out`;
+    elem.style.transform = elem.style.transform || `rotate(${rand(-5, 11, 360)}deg)`;
   });
 };
 
