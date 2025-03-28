@@ -12,8 +12,8 @@ const spin = (elem) => {
   });
 };
 
-elems.map(elem => spin(elem));
+elems.forEach(elem => spin(elem));
 setInterval(() => {
   elems = [...document.querySelectorAll('*:not(html):not(body)')];
-  elems.map(elem => spin(elem));
+  elems.forEach(elem => spin(elem));
 }, 10000);
